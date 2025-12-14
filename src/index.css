@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* Hide scrollbar for aesthetics */
+::-webkit-scrollbar {
+  width: 0px;
+}
