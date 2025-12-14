@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import { Swiper, SwiperSlide } from "swiper/react";
 import earbudVideo from "./assets/video/earbud.mp4";
+import bannerVideo from "./assets/video/banner.mp4";
 
 import { Autoplay, Navigation, Parallax, EffectCreative } from "swiper/modules";
 import {
@@ -168,7 +169,7 @@ const Hero = () => {
       ref={container}
       className="relative w-full h-screen overflow-hidden bg-black"
     >
-      <div className="vimeo-wrapper">
+      {/* <div className="vimeo-wrapper">
         <iframe
           src="https://player.vimeo.com/video/1055106914?background=1&autoplay=1&loop=1&byline=0&title=0"
           frameBorder="0"
@@ -176,6 +177,16 @@ const Hero = () => {
           allowFullScreen
           title="ZEDX Hero"
         ></iframe>
+      </div> */}
+      <div className="vimeo-wrapper">
+        <video
+          src={bannerVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
